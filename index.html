@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="contact-container">
     <h1>Contact Us</h1>
+    <p class="subtitle">We'd love to hear from you! Please fill out the form below or reach out via our social channels.</p>
     <form action="https://api.web3forms.com/submit" method="POST">
       <!-- Replace with your Access Key -->
       <input type="hidden" name="access_key" value="8f0a6016-09fc-4262-ace0-db98d9987437">
@@ -22,6 +24,10 @@
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
       </div>
       <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
         <label for="subject">Subject</label>
         <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
       </div>
@@ -31,6 +37,13 @@
       </div>
       <button type="submit">Send Message</button>
     </form>
+    <div class="social-links">
+      <p>Follow us on:</p>
+      <a href="#" class="social-icon">Facebook</a>
+      <a href="#" class="social-icon">Twitter</a>
+      <a href="#" class="social-icon">Instagram</a>
+      <a href="#" class="social-icon">LinkedIn</a>
+    </div>
   </div>
 </body>
 </html>
